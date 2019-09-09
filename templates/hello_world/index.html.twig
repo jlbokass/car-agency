@@ -3,9 +3,7 @@
 {% block title %}Hello HelloWorldController!{% endblock %}
 
 {% block body %}
-    {% set my_var = 'symfony' %}
-
-    {{ dump(my_var) }}
-
-    <h1>Hello {{ my_var }}</h1>
+    {% for language in languages %}
+        <li><a href="{{ path('show', {'language' : language}) }}">{{ language }}</a></li>
+    {% endfor %}
 {% endblock %}
