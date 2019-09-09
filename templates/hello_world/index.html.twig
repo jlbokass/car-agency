@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HelloWorldController!{% endblock %}
+
+{% block body %}
+    {% set my_var = 'symfony' %}
+
+    {{ dump(my_var) }}
+
+    <h1>Hello {{ my_var }}</h1>
+{% endblock %}
